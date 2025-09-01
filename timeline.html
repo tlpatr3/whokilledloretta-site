@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About • The Loretta Willoughby Newspaper Archive</title>
+  <title>Timeline • The Loretta Willoughby Newspaper Archive</title>
   <link rel="stylesheet" href="styles.css" />
   
   <link rel="icon" href="assets/favicon.ico" />
@@ -18,25 +18,22 @@
 </head>
 <body>
   <header class="site-header">
-    <h1>About This Project</h1>
+    <h1>Timeline</h1>
     <nav>
       <a href="index.html">Clippings</a>
-      <a href="timeline.html">Timeline</a>
-      <a href="about.html" class="active">About</a>
+      <a href="timeline.html" class="active">Timeline</a>
+      <a href="about.html">About</a>
       <a href="legal.html">Legal</a>
     </nav>
   </header>
   <main class="container">
-    <p>This site preserves primary-source clippings related to the 1985–1987 investigation into the death of <strong>Loretta Lynn Willoughby</strong> in Estill County, Kentucky. It’s intended for researchers, journalists, and the community.</p>
-    <h2>What’s here</h2>
-    <ul>
-      <li>Scan crops and transcripts for quick reading</li>
-      <li>Links to full-page PDFs for verification</li>
-      <li>Index by year and source</li>
-    </ul>
-    <h2>Notes</h2>
-    <p>OCR text may contain errors; consult the PDFs for verification. Dates and tags are approximations derived from the issue labels.</p>
+    <p>Grouped by year (approximate, based on issue range).</p>
+    <div id="timeline"></div>
   </main>
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightboxImg" alt="Newspaper clipping preview">
+  </div>
   <footer class="site-footer">
     <p>© {year} The Loretta Willoughby Project.</p>
   </footer>
@@ -44,5 +41,6 @@
     document.querySelector('.site-footer p').innerHTML =
       document.querySelector('.site-footer p').innerHTML.replace('{year}', new Date().getFullYear());
   </script>
+  <script src="timeline.js"></script>
 </body>
 </html>

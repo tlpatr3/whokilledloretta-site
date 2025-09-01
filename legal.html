@@ -1,1 +1,45 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Legal</title><link rel="stylesheet" href="styles.css"/></head><body><header class="site-header"><h1>Legal & Copyright</h1><nav><a href="index.html">Clippings</a><a href="about.html">About</a><a class="active" href="legal.html">Legal</a></nav></header><main class="container"><p>These clippings are presented for research, news reporting, commentary, and educational purposes. Original copyrights belong to their respective publishers.</p></main><footer class="site-footer"><p>© {year} The Loretta Willoughby Project.</p></footer><script>document.querySelector('.site-footer p').innerHTML=document.querySelector('.site-footer p').innerHTML.replace('{year}', new Date().getFullYear());</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legal • The Loretta Willoughby Newspaper Archive</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+  <link rel="icon" href="assets/favicon.ico" />
+  <meta property="og:title" content="Who Killed Loretta? Newspaper Archive">
+  <meta property="og:description" content="Digitized clippings, transcripts, and context from Estill County newspapers (1985–1987).">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.whokilledloretta.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <script defer data-domain="whokilledloretta.com" src="https://plausible.io/js/script.js"></script>
+
+</head>
+<body>
+  <header class="site-header">
+    <h1>Legal & Copyright</h1>
+    <nav>
+      <a href="index.html">Clippings</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="about.html">About</a>
+      <a href="legal.html" class="active">Legal</a>
+    </nav>
+  </header>
+  <main class="container">
+    <h2>Use of Newspaper Content</h2>
+    <p>These clippings are presented for research, news reporting, commentary, and educational purposes. Original copyrights belong to their respective publishers. We include minimal excerpts and small crops alongside commentary and context, which may qualify as fair use. If you are a rights holder and have concerns, please contact us.</p>
+    <h2>Attribution</h2>
+    <p>Please credit the original newspaper (e.g., “Estill County Tribune”, “Citizen Voice & Times”) and link back to this site’s specific entry.</p>
+    <h2>Accessibility</h2>
+    <p>We provide OCR text to aid screen readers and search. OCR may contain errors; please consult the scanned page for verification.</p>
+  </main>
+  <footer class="site-footer">
+    <p>© {year} The Loretta Willoughby Project.</p>
+  </footer>
+  <script>
+    document.querySelector('.site-footer p').innerHTML =
+      document.querySelector('.site-footer p').innerHTML.replace('{year}', new Date().getFullYear());
+  </script>
+</body>
+</html>

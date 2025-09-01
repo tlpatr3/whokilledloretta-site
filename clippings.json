@@ -3,8 +3,10 @@
     {
       "id": 1,
       "source_file": "CitizenVoiceMayorResponse0000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Mayor Response",
+      "year": null,
       "source_page": 1,
-      "excerpt": "murder of a young girl.\nCriminal investigation\ning: (1) The murder in-\nwill do so; (2) The murder isa\n(3) The murder occured in\nmurder. We all grieve for the\nin solving the murder; (4)\nment in the said investigation.",
+      "excerpt": "murder of a young girl.\nCriminal investigation\ning: (1) The murder in-\nwill do so; (2) The murder isa\n(3) The murder occured in\nmurder. We all grieve for the\nmurdered girl's family, and\nin solving the murder; (4)\nment in the said investigation.",
       "page_pdf": "CASE_EXTRACTS/CitizenVoiceMayorResponse0000.SEARCHABLE/p0001.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizenVoiceMayorResponse0000.SEARCHABLE/p0001_hit01.png",
@@ -15,15 +17,17 @@
         "CASE_EXTRACTS/CitizenVoiceMayorResponse0000.SEARCHABLE/p0001_hit06.png"
       ],
       "tags": [
-        "CitizenVoiceMayorResponse0000",
-        "SEARCHABLE"
+        "investigation",
+        "letters"
       ]
     },
     {
       "id": 2,
       "source_file": "CitizenVoiceMayorResponse0000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Mayor Response",
+      "year": null,
       "source_page": 2,
-      "excerpt": "murder of a young girl.\nCriminal investigation\ning: (1) The murder in-\nwill do so; (2) The murder isa\n(8) The murder occured in\nmurder. We all grieve for the Department or any other\nin solving the murder; (4) anyone else has an idea of\nin the said investigation, Department is to serve and",
+      "excerpt": "murder of a young girl.\nCriminal investigation\ning: (1) The murder in-\nwill do so; (2) The murder isa\n(8) The murder occured in\nmurder. We all grieve for the Department or any other\nmurdered girl's family, and \u00aeralich of our (the City of Ir-\nin solving the murder; (4) anyone else has an idea of\nin the said investigation, Department is to serve and",
       "page_pdf": "CASE_EXTRACTS/CitizenVoiceMayorResponse0000.SEARCHABLE/p0002.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizenVoiceMayorResponse0000.SEARCHABLE/p0002_hit01.png",
@@ -34,13 +38,15 @@
         "CASE_EXTRACTS/CitizenVoiceMayorResponse0000.SEARCHABLE/p0002_hit06.png"
       ],
       "tags": [
-        "CitizenVoiceMayorResponse0000",
-        "SEARCHABLE"
+        "investigation",
+        "letters"
       ]
     },
     {
       "id": 3,
       "source_file": "CitizenVoiceSpring19870000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1987",
+      "year": 1987,
       "source_page": 1,
       "excerpt": "with the murder of Loretta\nLynn Willoughby. He was\nWilloughby, who was 15 at\nthe time of her murder, is the\nWilloughby and a native of\nWilloughby\u2019s discovery that he\ncause of death was homicide.",
       "page_pdf": "CASE_EXTRACTS/CitizenVoiceSpring19870000.SEARCHABLE/p0001.pdf",
@@ -51,13 +57,15 @@
         "CASE_EXTRACTS/CitizenVoiceSpring19870000.SEARCHABLE/p0001_hit04.png"
       ],
       "tags": [
-        "CitizenVoiceSpring19870000",
-        "SEARCHABLE"
+        "1987",
+        "autopsy/homicide"
       ]
     },
     {
       "id": 4,
       "source_file": "CitizenVoiceSpring19870000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1987",
+      "year": 1987,
       "source_page": 2,
       "excerpt": "with the murder of Loretta\n\u2018Lynn Willoughby. He was\nWilloughby, who was 15 at\nthe time of her murder, is the\nWilloughby and a native of\nWilloughby\u2019s discovery that he\ncause of death was homicide.",
       "page_pdf": "CASE_EXTRACTS/CitizenVoiceSpring19870000.SEARCHABLE/p0002.pdf",
@@ -73,15 +81,17 @@
         "CASE_EXTRACTS/CitizenVoiceSpring19870000.SEARCHABLE/p0002_hit09.png"
       ],
       "tags": [
-        "CitizenVoiceSpring19870000",
-        "SEARCHABLE"
+        "1987",
+        "autopsy/homicide"
       ]
     },
     {
       "id": 5,
       "source_file": "CitizenVoiceSpring19870000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1987",
+      "year": 1987,
       "source_page": 3,
-      "excerpt": "Murder charge\nLoretta Lynn Willoughby, was\nthat Willoughby was killed by\ntigation into Willoughby\u2019s\nWilloughby\u2019s body was found\nWilloughby\u2019s death was a\nhomicide.\nable to continue investigating\nthe investigation will continue\ninvestigation and felt there",
+      "excerpt": "Murder charge\nReed, accused murderer of\nLoretta Lynn Willoughby, was\nthat Willoughby was killed by\ntigation into Willoughby\u2019s\nWilloughby\u2019s body was found\nWilloughby\u2019s death was a\nhomicide.\nable to continue investigating\nthe investigation will continue",
       "page_pdf": "CASE_EXTRACTS/CitizenVoiceSpring19870000.SEARCHABLE/p0003.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizenVoiceSpring19870000.SEARCHABLE/p0003_hit01.png",
@@ -93,15 +103,20 @@
         "CASE_EXTRACTS/CitizenVoiceSpring19870000.SEARCHABLE/p0003_hit07.png"
       ],
       "tags": [
-        "CitizenVoiceSpring19870000",
-        "SEARCHABLE"
+        "1987",
+        "autopsy/homicide",
+        "charges/trial",
+        "discovery",
+        "investigation"
       ]
     },
     {
       "id": 6,
       "source_file": "CitizenVoiceSpring19870000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1987",
+      "year": 1987,
       "source_page": 4,
-      "excerpt": "Loretta Lynn Willoughby, was\nthat Willoughby was killed by\ntigation into Willoughby\u2019s\nWilloughby\u2019s body was found\nWilloughby\u2019s death was a\nhomicide.\nable to continue investigating\nthe investigation will continue\ninvestigation and felt there",
+      "excerpt": "Murdercharge\nReed, accused murderer of\nLoretta Lynn Willoughby, was\nthat Willoughby was killed by\ntigation into Willoughby\u2019s\nWilloughby\u2019s body was found\nWilloughby\u2019s death was a\nhomicide.\nable to continue investigating\nthe investigation will continue",
       "page_pdf": "CASE_EXTRACTS/CitizenVoiceSpring19870000.SEARCHABLE/p0004.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizenVoiceSpring19870000.SEARCHABLE/p0004_hit01.png",
@@ -114,15 +129,20 @@
         "CASE_EXTRACTS/CitizenVoiceSpring19870000.SEARCHABLE/p0004_hit08.png"
       ],
       "tags": [
-        "CitizenVoiceSpring19870000",
-        "SEARCHABLE"
+        "1987",
+        "autopsy/homicide",
+        "charges/trial",
+        "discovery",
+        "investigation"
       ]
     },
     {
       "id": 7,
       "source_file": "CitizensVoiceFall19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Fall 1986",
+      "year": 1986,
       "source_page": 1,
-      "excerpt": "Harrison convicted of murder\nrison\u2019s fate on the murder\nin Willoughby kill\nvine, with the murder of\nWilloughby and a native of\nof Willoughby\u2019s discovery\nWilloughby and said that the\ncause ot death was homicide.",
+      "excerpt": "Harrison convicted of murder\nrison\u2019s fate on the murder\nto him that he had murdered\nin Willoughby kill\nvine, with the murder of\nWilloughby and a native of\nof Willoughby\u2019s discovery\nWilloughby and said that the\ncause ot death was homicide.\nStreet and tell everybody that Har",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0001.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0001_hit01.png",
@@ -134,13 +154,15 @@
         "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0001_hit07.png"
       ],
       "tags": [
-        "CitizensVoiceFall19860000",
-        "SEARCHABLE"
+        "1986",
+        "autopsy/homicide"
       ]
     },
     {
       "id": 8,
       "source_file": "CitizensVoiceFall19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Fall 1986",
+      "year": 1986,
       "source_page": 2,
       "excerpt": "in Willoughby kill\nvine, with the murder of\nLoretta Lynn Willoughby.\nWilloughby, who was 15 at\nthe time of her murder, is the\nWilloughby and a native of\nof Willoughby\u2019s discovery\nWilloughby and said that the\ncause of death was homicide.",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0002.pdf",
@@ -154,13 +176,15 @@
         "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0002_hit07.png"
       ],
       "tags": [
-        "CitizensVoiceFall19860000",
-        "SEARCHABLE"
+        "1986",
+        "autopsy/homicide"
       ]
     },
     {
       "id": 9,
       "source_file": "CitizensVoiceFall19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Fall 1986",
+      "year": 1986,
       "source_page": 3,
       "excerpt": "December 1985 murder of\nmurderer of Loretta Lynn Wil-\nthe investigation.",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0003.pdf",
@@ -169,13 +193,15 @@
         "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0003_hit02.png"
       ],
       "tags": [
-        "CitizensVoiceFall19860000",
-        "SEARCHABLE"
+        "1986",
+        "investigation"
       ]
     },
     {
       "id": 10,
       "source_file": "CitizensVoiceFall19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Fall 1986",
+      "year": 1986,
       "source_page": 4,
       "excerpt": "murderer of Loretta Lynn Wil-\nthe investigation.",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0004.pdf",
@@ -184,13 +210,15 @@
         "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0004_hit02.png"
       ],
       "tags": [
-        "CitizensVoiceFall19860000",
-        "SEARCHABLE"
+        "1986",
+        "investigation"
       ]
     },
     {
       "id": 11,
       "source_file": "CitizensVoiceFall19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Fall 1986",
+      "year": 1986,
       "source_page": 5,
       "excerpt": "murderer of Loretta Lynn Wil-\nmurder on Sept. 26.\nWilloughby, who was 15 at\nthe time of her murder, is the\nWilloughby and a native of\nWilloughby\u2019s discovery that he",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0005.pdf",
@@ -203,13 +231,14 @@
         "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0005_hit06.png"
       ],
       "tags": [
-        "CitizensVoiceFall19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 12,
       "source_file": "CitizensVoiceFall19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Fall 1986",
+      "year": 1986,
       "source_page": 6,
       "excerpt": "murderer of Loretta Lynn Wil-\nmurder on Sept. 26.\nWilloughby, who was 15 at\nthe time of her murder, is the\nWilloughby and a native of\nWilloughby\u2019s discovery that he",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0006.pdf",
@@ -223,13 +252,14 @@
         "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0006_hit07.png"
       ],
       "tags": [
-        "CitizensVoiceFall19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 13,
       "source_file": "CitizensVoiceFall19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Fall 1986",
+      "year": 1986,
       "source_page": 8,
       "excerpt": "Murder trial delayed by faulty\nJackson rescheduled a murder\nmurder and assault in the\nhomicide and lodged in the Es-\non Hood Avenue Sunday night. Investigators say the two were probably overcome by fur\nPreliminary investigations\nPolice Arson Investigator Mike",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0008.pdf",
@@ -239,13 +269,17 @@
         "CASE_EXTRACTS/CitizensVoiceFall19860000.SEARCHABLE/p0008_hit03.png"
       ],
       "tags": [
-        "CitizensVoiceFall19860000",
-        "SEARCHABLE"
+        "1986",
+        "autopsy/homicide",
+        "charges/trial",
+        "investigation"
       ]
     },
     {
       "id": 14,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 6,
       "excerpt": "who. killed Loretta Lynn\nWilloughby haven't been",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0006.pdf",
@@ -253,13 +287,14 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0006_hit01.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 15,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 7,
       "excerpt": "- who killed Loretta Lynn\n- Willoughby haven't been",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0007.pdf",
@@ -268,15 +303,16 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0007_hit02.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 16,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 8,
-      "excerpt": "Willoughby. girl that was\nthe little body was found and\n\u2018that little Willoughby girl\u2019s\ngo to someone who really called in-about Loretta Lynn\nneeded the money and if they Willoughby about those four",
+      "excerpt": "Willoughby. girl that was\nthe little body was found and\narrested that murdered the\n\u2018that little Willoughby girl\u2019s\ngo to someone who really called in-about Loretta Lynn\nneeded the money and if they Willoughby about those four\n40222. Everybody try to keep",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0008.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0008_hit01.png",
@@ -285,15 +321,18 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0008_hit04.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986",
+        "charges/trial",
+        "discovery"
       ]
     },
     {
       "id": 17,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 9,
-      "excerpt": "Willoughby girl that was\nthe little body was found and\nthat little Willoughby girl's |",
+      "excerpt": "Willoughby girl that was\nthe little body was found and\narrested that murdered the\nthat little Willoughby girl's |",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0009.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0009_hit01.png",
@@ -301,13 +340,16 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0009_hit03.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986",
+        "charges/trial",
+        "discovery"
       ]
     },
     {
       "id": 18,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 10,
       "excerpt": "y called in-about Loretta Lynn\ney Willoughby about those four",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0010.pdf",
@@ -316,15 +358,16 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0010_hit02.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 19,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 13,
-      "excerpt": "murder to take over in our\nLoretta Willoughby disap-\n1985. Loretta\u2019s family isn\u2019t\nold biddy who said Loretta\nWilloughby wasn't a child,\nwhat happened to Loretta\ngiven upon finding Loretta\u2019s\nLoretta Willoughby\u2019s murd-\nkilled Loretta Willoughby?\nFeb. 10, 1985 and her body",
+      "excerpt": "murder to take over in our\nshould, and everybody else,\nIf everybody wants the\nLoretta Willoughby disap-\n1985. Loretta\u2019s family isn\u2019t\nold biddy who said Loretta\nWilloughby wasn't a child,\nwhat happened to Loretta\nwho murdered her? Are you\ngiven upon finding Loretta\u2019s",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0013.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0013_hit01.png",
@@ -341,15 +384,16 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0013_hit12.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 20,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 14,
-      "excerpt": "Loretta Willoughby disap-\n1985. Loretta\u2019s family isn\u2019t\nold biddy who said Loretta\nWilloughby wasn't a child,\nwhat happened to Loretta\ngiven upon finding Loretta\u2019s\nLoretta Willoughby\u2019s murd-\nkilled Loretta Willoughby?\nFeb. 10, 1985 and her body",
+      "excerpt": "Loretta Willoughby disap-\n1985. Loretta\u2019s family isn\u2019t\nold biddy who said Loretta\nWilloughby wasn't a child,\nwhat happened to Loretta\nwho murdered her? Are you\ngiven upon finding Loretta\u2019s\nmurderer, and for your in-\nLoretta Willoughby\u2019s murd-\nkilled Loretta Willoughby?",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0014.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0014_hit01.png",
@@ -367,15 +411,16 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0014_hit13.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 21,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 15,
-      "excerpt": "Sound Off about Loretta\u2019s\nmurder. Did they check the\nmurder of a little girl. It's a",
+      "excerpt": "Sound Off about Loretta\u2019s\nmurder. Did they check the\ncan get the murderer ofa cop\nmurder of a little girl. It's a\nanybody's fault..The snow is",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0015.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0015_hit01.png",
@@ -383,15 +428,17 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0015_hit03.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986",
+        "letters"
       ]
     },
     {
       "id": 22,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 16,
-      "excerpt": "Sound Off about Loretta's\nmurder. Did they check the I\nmurder of a little girl. It's a",
+      "excerpt": "Sound Off about Loretta's\nmurder. Did they check the I\ncan get the murderer of a cop kn\nmurder of a little girl. It's a",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0016.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0016_hit01.png",
@@ -400,13 +447,15 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0016_hit04.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986",
+        "letters"
       ]
     },
     {
       "id": 23,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 17,
       "excerpt": "much about the Willoughby\ngirl's murder would tell\nmurder of Bob Walker. I just\nWilloughby case. If they had,\nWilloughby murder as they\non Walker's murder, but\nmurder of Bob Walker. I'm\nmurder is just as bad",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0017.pdf",
@@ -419,13 +468,14 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0017_hit06.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 24,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 18,
       "excerpt": "much about the Willoughby\ngirl\u2019s murder would tell",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0018.pdf",
@@ -434,13 +484,14 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0018_hit02.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 25,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 19,
       "excerpt": "murder of Bob Walker. I just\nWilloughby case. If they had,\nWilloughby murder as they\non Walker's murder, but\nmurder of Bob Walker. I'm\nmurder is just as bad",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0019.pdf",
@@ -452,15 +503,16 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0019_hit05.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 26,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 20,
-      "excerpt": "little Willoughby girl\u201d who\nmurder her? If it\u2018does, about\ned on a murder of a little\nWill the family of Loretta\nWilloughby please leave an\nabout Loretta\u2019s death. It\ntle girl\u2019s murder.",
+      "excerpt": "little Willoughby girl\u201d who\n\u2018was murdered. Some say she\nthat give anybody a right to\nmurder her? If it\u2018does, about\nwould have to be murdered. I\nanybody else. If there are\ned on a murder of a little\nfor sormebody\nSomebody has been dumping\nWill the family of Loretta",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0020.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0020_hit01.png",
@@ -473,15 +525,16 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0020_hit08.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 27,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 21,
-      "excerpt": "little Willoughby girl\u201d who\nmurder her? If it'does, about",
+      "excerpt": "little Willoughby girl\u201d who\nwas murdered. Some say she\nthat give anybody a right to\nmurder her? If it'does, about\nwould have to be murdered. I\nanybody else. If there are",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0021.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0021_hit01.png",
@@ -489,13 +542,14 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0021_hit03.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 28,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 22,
       "excerpt": "about Loretta\u2019s death. It\ntle girl\u2019s murder.",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0022.pdf",
@@ -504,13 +558,14 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0022_hit02.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 29,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 23,
       "excerpt": "Will the family of Loretta\nWilloughby please leave an",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0023.pdf",
@@ -519,15 +574,16 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0023_hit02.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 30,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 24,
-      "excerpt": "Loretta Willoughby's mother\nthe little Willoughby girl, I",
+      "excerpt": "that somebody in the family\ndone to find the murderer. If\nLoretta Willoughby's mother\nanybody else. There's two\nmurderer or the murderers of\nthe little Willoughby girl, I",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0024.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0024_hit01.png",
@@ -535,13 +591,14 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0024_hit03.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 31,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 26,
       "excerpt": "Loretta Willoughby\u2019s mother",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0026.pdf",
@@ -549,13 +606,14 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0026_hit01.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 32,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 27,
       "excerpt": "Loretta Lynn Willoughby\u2019s\nLoretta Willoughby. You\nyour own investigation, and\nof Loretta's disappearance,\nLoretta. We also put her\ning to locate Loretta. Then\nher body was found in town\nthis crime against Loretta:.\nWilloughby case, Bob",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0027.pdf",
@@ -569,13 +627,16 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0027_hit07.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986",
+        "discovery",
+        "investigation"
       ]
     },
     {
       "id": 33,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 28,
       "excerpt": "Loretta Lynn Willoughby\u2019s\nLoretta Willoughby. You\nyour own investigation, and\nof Loretta's disappearance,\nLoretta. We also put her\ning to locate Loretta. Then\nher body was found in town\nthis crime against Loretta.\nWilloughby case, Bob",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0028.pdf",
@@ -590,15 +651,18 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0028_hit08.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986",
+        "discovery",
+        "investigation"
       ]
     },
     {
       "id": 34,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 29,
-      "excerpt": "Willoughby. In last week's\nLoretta Lynn Willoughby\nmurder. These people should\nta Willoughby\u2019s murderer and\nBob Walker's murder. There",
+      "excerpt": "Willoughby. In last week's\nLoretta Lynn Willoughby\nmurder. These people should\nta Willoughby\u2019s murderer and\nBob Walker's murder. There\n\u2018They somebody else\nEverybody sants the police to\nof mine. Well, everybody has",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0029.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0029_hit01.png",
@@ -609,13 +673,15 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0029_hit06.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986",
+        "investigation"
       ]
     },
     {
       "id": 35,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 30,
       "excerpt": "Willoughby. In last week's",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0030.pdf",
@@ -623,15 +689,16 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0030_hit01.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 36,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 31,
-      "excerpt": "Loretta Lynn Willoughby\nmurder. These people should\nta Willoughby\u2019s murderer and\nBob Walker\u2019s murder. \u2018There",
+      "excerpt": "Loretta Lynn Willoughby\nmurder. These people should\nta Willoughby\u2019s murderer and\nBob Walker\u2019s murder. \u2018There\nsomebody else\nEverybody wants the police to\nof mine. Well, everybody has",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0031.pdf",
       "crops": [
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0031_hit01.png",
@@ -641,51 +708,58 @@
         "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0031_hit05.png"
       ],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986",
+        "investigation"
       ]
     },
     {
       "id": 37,
       "source_file": "CitizensVoiceSpring19860000.SEARCHABLE",
+      "source_label": "Citizen Voice & Times \u2014 Spring 1986",
+      "year": 1986,
       "source_page": 32,
       "excerpt": "newsworthy. If such is the case, we will investigate. Please",
       "page_pdf": "CASE_EXTRACTS/CitizensVoiceSpring19860000.SEARCHABLE/p0032.pdf",
       "crops": [],
       "tags": [
-        "CitizensVoiceSpring19860000",
-        "SEARCHABLE"
+        "1986",
+        "investigation"
       ]
     },
     {
       "id": 38,
       "source_file": "EstillCoTribuneJanuary-June1985.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Jan\u2013Jun 1985",
+      "year": 1985,
       "source_page": 1,
-      "excerpt": "tigators to believe that the body\nclothing remains on the body\nWalker said if the body is that\nthe missing female the body could\nmodel and the investigation.\nuntil after a lengthy investigation",
+      "excerpt": "\u201cNobody knows\u201d where the city\ntigators to believe that the body\nclothing remains on the body\nWalker said if the body is that\nthe missing female the body could\nmodel and the investigation.\nuntil after a lengthy investigation",
       "page_pdf": "CASE_EXTRACTS/EstillCoTribuneJanuary-June1985.SEARCHABLE/p0001.pdf",
       "crops": [],
       "tags": [
-        "EstillCoTribuneJanuary",
-        "June1985",
-        "SEARCHABLE"
+        "1985",
+        "discovery",
+        "investigation"
       ]
     },
     {
       "id": 39,
       "source_file": "EstillCoTribuneJanuary-June1985.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Jan\u2013Jun 1985",
+      "year": 1985,
       "source_page": 2,
       "excerpt": "Body\nThe case is being investigated by",
       "page_pdf": "CASE_EXTRACTS/EstillCoTribuneJanuary-June1985.SEARCHABLE/p0002.pdf",
       "crops": [],
       "tags": [
-        "EstillCoTribuneJanuary",
-        "June1985",
-        "SEARCHABLE"
+        "1985",
+        "investigation"
       ]
     },
     {
       "id": 40,
       "source_file": "EstillCoTribuneJanuary-June1985.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Jan\u2013Jun 1985",
+      "year": 1985,
       "source_page": 3,
       "excerpt": "~the investigation remain sketchy\nweek as those of Loretta Lynn\nWilloughby.\nWilloughby, 15, of Church\nof Mollie Booth Willoughby\nof Irvine and Larry Willoughby\nto identify the body since they\nclothing which Loretta Willoughby\nwith the body.\na homicide and some possible",
       "page_pdf": "CASE_EXTRACTS/EstillCoTribuneJanuary-June1985.SEARCHABLE/p0003.pdf",
@@ -697,14 +771,16 @@
         "CASE_EXTRACTS/EstillCoTribuneJanuary-June1985.SEARCHABLE/p0003_hit05.png"
       ],
       "tags": [
-        "EstillCoTribuneJanuary",
-        "June1985",
-        "SEARCHABLE"
+        "1985",
+        "autopsy/homicide",
+        "investigation"
       ]
     },
     {
       "id": 41,
       "source_file": "EstillCoTribuneJanuary-June1985.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Jan\u2013Jun 1985",
+      "year": 1985,
       "source_page": 4,
       "excerpt": "Loretta Lynn Willoughby\nLoretta Lynn Willoughby, 15,\nSurvivors include her mother, Mollie Booth Willoughby of Irvine;\nher father, Larry Willoughby of Winchester; one son, Jason Lee\nWilloughby of Irvine; two half-sisters, Delia Lynn Willoughby and\nCleona Fern Willoughby, both of Winchester; and her grandmother,",
       "page_pdf": "CASE_EXTRACTS/EstillCoTribuneJanuary-June1985.SEARCHABLE/p0004.pdf",
@@ -719,40 +795,43 @@
         "CASE_EXTRACTS/EstillCoTribuneJanuary-June1985.SEARCHABLE/p0004_hit08.png"
       ],
       "tags": [
-        "EstillCoTribuneJanuary",
-        "June1985",
-        "SEARCHABLE"
+        "1985"
       ]
     },
     {
       "id": 42,
       "source_file": "EstillCoTribuneJuly-December1985.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Jul\u2013Dec 1985",
+      "year": 1985,
       "source_page": 1,
-      "excerpt": "tigators to believe that the body\nclothing remains on the body\nWalker said if the body is that\nthe missing female the body could\nmodel and the investigation.\nuntil after a lengthy investigation",
+      "excerpt": "\u201cNobody knows\u201d where the city\ntigators to believe that the body\nclothing remains on the body\nWalker said if the body is that\nthe missing female the body could\nmodel and the investigation.\nuntil after a lengthy investigation",
       "page_pdf": "CASE_EXTRACTS/EstillCoTribuneJuly-December1985.SEARCHABLE/p0001.pdf",
       "crops": [],
       "tags": [
-        "EstillCoTribuneJuly",
-        "December1985",
-        "SEARCHABLE"
+        "1985",
+        "discovery",
+        "investigation"
       ]
     },
     {
       "id": 43,
       "source_file": "EstillCoTribuneJuly-December1985.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Jul\u2013Dec 1985",
+      "year": 1985,
       "source_page": 2,
       "excerpt": "Body\nThe case is being investigated by",
       "page_pdf": "CASE_EXTRACTS/EstillCoTribuneJuly-December1985.SEARCHABLE/p0002.pdf",
       "crops": [],
       "tags": [
-        "EstillCoTribuneJuly",
-        "December1985",
-        "SEARCHABLE"
+        "1985",
+        "investigation"
       ]
     },
     {
       "id": 44,
       "source_file": "EstillCoTribuneJuly-December1985.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Jul\u2013Dec 1985",
+      "year": 1985,
       "source_page": 3,
       "excerpt": "~the investigation remain sketchy\nweek as those of Loretta Lynn\nWilloughby.\nWilloughby, 15, of Church\nof Mollie Booth Willoughby\nof Irvine and Larry Willoughby\nto identify the body since they\nclothing which Loretta Willoughby\nwith the body.\na homicide and some possible",
       "page_pdf": "CASE_EXTRACTS/EstillCoTribuneJuly-December1985.SEARCHABLE/p0003.pdf",
@@ -764,14 +843,16 @@
         "CASE_EXTRACTS/EstillCoTribuneJuly-December1985.SEARCHABLE/p0003_hit05.png"
       ],
       "tags": [
-        "EstillCoTribuneJuly",
-        "December1985",
-        "SEARCHABLE"
+        "1985",
+        "autopsy/homicide",
+        "investigation"
       ]
     },
     {
       "id": 45,
       "source_file": "EstillCoTribuneJuly-December1985.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Jul\u2013Dec 1985",
+      "year": 1985,
       "source_page": 4,
       "excerpt": "Loretta Lynn Willoughby\nLoretta Lynn Willoughby, 15,\nSurvivors include her mother, Mollie Booth Willoughby of Irvine;\nher father, Larry Willoughby of Winchester; one son, Jason Lee\nWilloughby of Irvine; two half-sisters, Delia Lynn Willoughby and\nCleona Fern Willoughby, both of Winchester; and her grandmother,",
       "page_pdf": "CASE_EXTRACTS/EstillCoTribuneJuly-December1985.SEARCHABLE/p0004.pdf",
@@ -786,16 +867,16 @@
         "CASE_EXTRACTS/EstillCoTribuneJuly-December1985.SEARCHABLE/p0004_hit08.png"
       ],
       "tags": [
-        "EstillCoTribuneJuly",
-        "December1985",
-        "SEARCHABLE"
+        "1985"
       ]
     },
     {
       "id": 46,
       "source_file": "EstillCoTribuneJuly-December1985.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Jul\u2013Dec 1985",
+      "year": 1985,
       "source_page": 5,
-      "excerpt": "the murder of this child.\njuncil replaces a body\nparts of your body (and to others)\nivy rash on your body or anyone\nAGRICULTURE. One of the programshouldbeabletocontinue \u2014_ troubled by the recent murder of a\nmurder of this unfortunate girl is",
+      "excerpt": "the murder of this child.\norder to bring this murderer to\njuncil replaces a body\nparts of your body (and to others)\nivy rash on your body or anyone\nAGRICULTURE. One of the programshouldbeabletocontinue \u2014_ troubled by the recent murder of a\nmurder of this unfortunate girl is",
       "page_pdf": "CASE_EXTRACTS/EstillCoTribuneJuly-December1985.SEARCHABLE/p0005.pdf",
       "crops": [
         "CASE_EXTRACTS/EstillCoTribuneJuly-December1985.SEARCHABLE/p0005_hit01.png",
@@ -804,16 +885,16 @@
         "CASE_EXTRACTS/EstillCoTribuneJuly-December1985.SEARCHABLE/p0005_hit04.png"
       ],
       "tags": [
-        "EstillCoTribuneJuly",
-        "December1985",
-        "SEARCHABLE"
+        "1985"
       ]
     },
     {
       "id": 47,
       "source_file": "EstillTribuneFall19860000.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Fall 1986",
+      "year": 1986,
       "source_page": 1,
-      "excerpt": "\u2018Walker murder trial yesterday.\nWalker. Police officers investigating\nmurder by introducing testimony\ncruiser on the day of the murder.\nwas the murder weapon although it\nmurder trial, opening arguments\nmurder.\nHarrison\u2019s car during the murder,\nNick Harrison, the defendantin the Bob Walker murder\nmurder of Loretta Lynn Willoughby.",
+      "excerpt": "\u2018Walker murder trial yesterday.\nwho could have murdered Bob\nWalker. Police officers investigating\nmurder by introducing testimony\ncruiser on the day of the murder.\nwas the murder weapon although it\nnobody seemed to answer. You're\nmurder trial, opening arguments\nmurderg\u2019\nmurder.",
       "page_pdf": "CASE_EXTRACTS/EstillTribuneFall19860000.SEARCHABLE/p0001.pdf",
       "crops": [
         "CASE_EXTRACTS/EstillTribuneFall19860000.SEARCHABLE/p0001_hit01.png",
@@ -830,15 +911,18 @@
         "CASE_EXTRACTS/EstillTribuneFall19860000.SEARCHABLE/p0001_hit12.png"
       ],
       "tags": [
-        "EstillTribuneFall19860000",
-        "SEARCHABLE"
+        "1986",
+        "charges/trial",
+        "investigation"
       ]
     },
     {
       "id": 48,
       "source_file": "EstillTribuneFall19860000.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Fall 1986",
+      "year": 1986,
       "source_page": 2,
-      "excerpt": "murder\nof Loretta Lynn Willoughby.\nWilloughby was fifteen years old\nbody was not discovered until three\nHer badly decomposed body was\nher body.\nReed had been a suspect in the\nThe Willoughby murder has been",
+      "excerpt": "murder\nof Loretta Lynn Willoughby.\nWilloughby was fifteen years old\nbody was not discovered until three\nHer badly decomposed body was\nher body.\nReed had been a suspect in the\nThe Willoughby murder has been\nunsolved murders in recent years,\nSeveral other murders have been",
       "page_pdf": "CASE_EXTRACTS/EstillTribuneFall19860000.SEARCHABLE/p0002.pdf",
       "crops": [
         "CASE_EXTRACTS/EstillTribuneFall19860000.SEARCHABLE/p0002_hit01.png",
@@ -848,15 +932,17 @@
         "CASE_EXTRACTS/EstillTribuneFall19860000.SEARCHABLE/p0002_hit05.png"
       ],
       "tags": [
-        "EstillTribuneFall19860000",
-        "SEARCHABLE"
+        "1986",
+        "discovery"
       ]
     },
     {
       "id": 49,
       "source_file": "EstillTribuneFall19860000.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Fall 1986",
+      "year": 1986,
       "source_page": 3,
-      "excerpt": "February 10, 1986 murder of\nLoretta Lynn Willoughby.",
+      "excerpt": "February 10, 1986 murder of\nLoretta Lynn Willoughby.\nTodd was accused of murdering",
       "page_pdf": "CASE_EXTRACTS/EstillTribuneFall19860000.SEARCHABLE/p0003.pdf",
       "crops": [
         "CASE_EXTRACTS/EstillTribuneFall19860000.SEARCHABLE/p0003_hit01.png",
@@ -864,13 +950,14 @@
         "CASE_EXTRACTS/EstillTribuneFall19860000.SEARCHABLE/p0003_hit03.png"
       ],
       "tags": [
-        "EstillTribuneFall19860000",
-        "SEARCHABLE"
+        "1986"
       ]
     },
     {
       "id": 50,
       "source_file": "EstillTribuneSpring19870000.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Spring 1987",
+      "year": 1987,
       "source_page": 1,
       "excerpt": "Chestnut Stand, was investigated\nWednesday for the murder of\nLoretta Willoughby. However,",
       "page_pdf": "CASE_EXTRACTS/EstillTribuneSpring19870000.SEARCHABLE/p0001.pdf",
@@ -878,13 +965,15 @@
         "CASE_EXTRACTS/EstillTribuneSpring19870000.SEARCHABLE/p0001_hit01.png"
       ],
       "tags": [
-        "EstillTribuneSpring19870000",
-        "SEARCHABLE"
+        "1987",
+        "investigation"
       ]
     },
     {
       "id": 51,
       "source_file": "EstillTribuneSpring19870000.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Spring 1987",
+      "year": 1987,
       "source_page": 2,
       "excerpt": "Wednesday for the murder of\nLoretta Willoughby. However,",
       "page_pdf": "CASE_EXTRACTS/EstillTribuneSpring19870000.SEARCHABLE/p0002.pdf",
@@ -894,13 +983,14 @@
         "CASE_EXTRACTS/EstillTribuneSpring19870000.SEARCHABLE/p0002_hit03.png"
       ],
       "tags": [
-        "EstillTribuneSpring19870000",
-        "SEARCHABLE"
+        "1987"
       ]
     },
     {
       "id": 52,
       "source_file": "EstillTribuneSpring19870000.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Spring 1987",
+      "year": 1987,
       "source_page": 3,
       "excerpt": "Investigator to be sentenced tomorrow -\nThurman: Buddy\u201d Misenheimer, an investigator\n\u2018opened until after Harrison was found guilty of Walker's murder on\nTheinvestigator received acquittals \u2018on charges a anpenie witha\n\u2018Murder charge is dropped\nin Loretta Willoughby case\nmurder of Loretta Lynn Willoughby.\non the murder charge on May 13.\nthe murder, However. Chambliss\nand body fluids. but they did not",
       "page_pdf": "CASE_EXTRACTS/EstillTribuneSpring19870000.SEARCHABLE/p0003.pdf",
@@ -917,15 +1007,19 @@
         "CASE_EXTRACTS/EstillTribuneSpring19870000.SEARCHABLE/p0003_hit10.png"
       ],
       "tags": [
-        "EstillTribuneSpring19870000",
-        "SEARCHABLE"
+        "1987",
+        "charges/trial",
+        "discovery",
+        "investigation"
       ]
     },
     {
       "id": 53,
       "source_file": "EstillTributeAgnesLetter0000.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Agnes Letter",
+      "year": null,
       "source_page": 1,
-      "excerpt": "The new council replaces a body\nparts of your body (and to others)\nrash on your. body or. anyone\nis very the murder\nof the roi should be able ta Sontinus troubled by the recent murder of a Igrieve for the family of this little\nof how murder of this unfortunate",
+      "excerpt": "The new council replaces a body\nparts of your body (and to others)\nrash on your. body or. anyone\nis very the murder\nof the roi should be able ta Sontinus troubled by the recent murder of a Igrieve for the family of this little\nfarmers could begin growing fruits selling our coal overseas. By our little community. es order\u2019 to. bring this murderer to\nof how murder of this unfortunate",
       "page_pdf": "CASE_EXTRACTS/EstillTributeAgnesLetter0000.SEARCHABLE/p0001.pdf",
       "crops": [
         "CASE_EXTRACTS/EstillTributeAgnesLetter0000.SEARCHABLE/p0001_hit01.png",
@@ -934,15 +1028,16 @@
         "CASE_EXTRACTS/EstillTributeAgnesLetter0000.SEARCHABLE/p0001_hit04.png"
       ],
       "tags": [
-        "EstillTributeAgnesLetter0000",
-        "SEARCHABLE"
+        "letters"
       ]
     },
     {
       "id": 54,
       "source_file": "EstillTributeAgnesLetter0000.SEARCHABLE",
+      "source_label": "Estill County Tribune \u2014 Agnes Letter",
+      "year": null,
       "source_page": 2,
-      "excerpt": "troubled by the recent murder of a\nmurder\nthe murder",
+      "excerpt": "troubled by the recent murder of a\nmurder\nthe murder\nto bring this murderer to",
       "page_pdf": "CASE_EXTRACTS/EstillTributeAgnesLetter0000.SEARCHABLE/p0002.pdf",
       "crops": [
         "CASE_EXTRACTS/EstillTributeAgnesLetter0000.SEARCHABLE/p0002_hit01.png",
@@ -951,8 +1046,7 @@
         "CASE_EXTRACTS/EstillTributeAgnesLetter0000.SEARCHABLE/p0002_hit04.png"
       ],
       "tags": [
-        "EstillTributeAgnesLetter0000",
-        "SEARCHABLE"
+        "letters"
       ]
     }
   ]
