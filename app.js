@@ -78,3 +78,93 @@ yearFilter.addEventListener('change', applyFilters);
 clearBtn.addEventListener('click', ()=>{
   searchInput.value=''; sourceFilter.value=''; yearFilter.value=''; applyFilters();
 });
+
+// === Enhancements: deep-linking, counts, highlighting, reader links ===
+const resultsCount = document.getElementById('resultsCount');
+const hint = document.getElementById('hint');
+
+function setParams(params){
+  const url = new URL(location);
+  Object.entries(params).forEach(([k,v])=>{
+    if(v) url.searchParams.set(k, v);
+    else url.searchParams.delete(k);
+  });
+  history.replaceState(null, '', url);
+}
+
+function getParams(){
+  const sp = new URLSearchParams(location.search);
+  return {
+    q: sp.get('q') || '',
+    source: sp.get('source') || '',
+    year: sp.get('year') || '',
+    id: sp.get('id') || ''
+  };
+}
+
+function applyParamsToControls(){
+  const p = getParams();
+  searchInput.value = p.q;
+  sourceFilter.value = p.source;
+  yearFilter.value = p.year;
+}
+
+function updateCount(){
+  const n = filtered.length;
+  resultsCount.textContent = n + (n===1 ? ' result' : ' results');
+  hint.textContent = searchInput.value ? 'Tip: click a card title to open a clean reading view.' : '';
+}
+
+function highlight(text, q){
+  if(!q) return text;
+  try{
+    const rx = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')','ig');
+    return text.replace(rx, '<mark>$1</mark>');
+  }catch(e){ return text; }
+}
+
+function render(){
+  grid.innerHTML = '';
+  filtered.forEach(c => {
+    const node = cardTpl.content.cloneNode(true);
+    const titleEl = node.querySelector('.title');
+    const thumb = node.querySelector('.thumb');
+    const thumbLink = node.querySelector('.thumbLink');
+    const preview = (c.crops && c.crops.length) ? c.crops[0] : null;
+    if(preview){
+      thumb.style.backgroundImage = `url('${preview}')`;
+      thumbLink.href = preview;
+      thumbLink.target = '_blank';
+      thumbLink.setAttribute('aria-label', `Open image crop for ${c.source_label||c.source_file}, page ${c.source_page}`);
+    }
+    const baseTitle = `${c.source_label || c.source_file} — p.${c.source_page}`;
+    titleEl.innerHTML = `<a href="clip.html?id=${c.id}">${highlight(baseTitle, searchInput.value)}</a>`;
+    const excerptEl = node.querySelector('.excerpt');
+    excerptEl.innerHTML = highlight(excerptize(c.excerpt), searchInput.value);
+    const links = node.querySelector('.links');
+    if(c.page_pdf){ const a = document.createElement('a'); a.href = c.page_pdf; a.target = '_blank'; a.textContent = 'View page PDF'; links.appendChild(a); }
+    if(preview){ const a2 = document.createElement('a'); a2.href = preview; a2.target = '_blank'; a2.textContent = 'Open first crop'; links.appendChild(a2); }
+    const tagsEl = node.querySelector('.tags');
+    (c.tags||[]).forEach(t=>{ const s=document.createElement('span'); s.className='tag'; s.textContent=t; tagsEl.appendChild(s); });
+    grid.appendChild(node);
+  });
+  updateCount();
+}
+
+function applyFilters(){
+  const qv = (searchInput.value||'').toLowerCase();
+  const src = sourceFilter.value;
+  const yr  = yearFilter.value;
+  filtered = CLIPS.filter(c => {
+    const matchesQuery = !qv || (`${c.source_label||c.source_file} ${c.excerpt}`.toLowerCase().includes(qv));
+    const matchesSrc = !src || (c.source_label||c.source_file) === src;
+    const matchesYr  = !yr  || String(c.year||'') === yr;
+    return matchesQuery && matchesSrc && matchesYr;
+  });
+  setParams({q: searchInput.value, source: src, year: yr});
+  render();
+}
+
+// Initialize from URL params
+applyParamsToControls();
+applyFilters();

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clipping • Who Killed Loretta?</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+  <link rel="icon" href="assets/favicon.ico" />
+  <meta property="og:title" content="Who Killed Loretta? Newspaper Archive">
+  <meta property="og:description" content="Digitized clippings, transcripts, and context from Estill County newspapers (1985–1987).">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.whokilledloretta.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <script defer data-domain="whokilledloretta.com" src="https://plausible.io/js/script.js"></script>
+
+  <style>
+    .reader{max-width:900px;margin:1rem auto}
+    .reader .lead{color:var(--muted)}
+    .viewer img{max-width:100%;height:auto;border:1px solid var(--border);border-radius:.5rem}
+    .actions a{margin-right:.75rem}
+    .ocr{white-space:pre-wrap;background:var(--card);border:1px solid var(--border);border-radius:.5rem;padding:.75rem}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <h1><a href="index.html" style="text-decoration:none">← Clippings</a></h1>
+  </header>
+  <main id="main" class="container reader">
+    <div id="content"></div>
+  </main>
+  <script>
+  function q(name){return new URLSearchParams(location.search).get(name);}
+  function esc(s){return (s||'').replace(/[&<>]/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]))}
+  fetch('clippings.json').then(r=>r.json()).then(data=>{
+    const id = Number(q('id'));
+    const c = (data.clippings||[]).find(x=>Number(x.id)===id);
+    const host = document.getElementById('content');
+    if(!c){host.innerHTML='<p>Not found.</p>'; return;}
+    const h = document.createElement('div');
+    h.innerHTML = `
+      <h2>${esc(c.source_label||c.source_file)} — page ${c.source_page}</h2>
+      <p class="lead">${esc((c.excerpt||'').replace(/\s+/g,' ').slice(0,400))}</p>
+      <div class="actions">
+        ${c.page_pdf ? `<a href="${c.page_pdf}" target="_blank" rel="noopener">Open page PDF</a>` : ''}
+        ${c.crops && c.crops.length ? `<a href="${c.crops[0]}" target="_blank" rel="noopener">Open first crop</a>` : ''}
+        <a href="index.html#id=${c.id}">Back to results</a>
+        <a href="javascript:window.print()">Print</a>
+        <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent('Who Killed Loretta? Newspaper Archive')}&url=${encodeURIComponent(location.href)}" target="_blank" rel="noopener">Share</a>
+      </div>
+      <div class="viewer">
+        ${c.crops && c.crops.length ? `<img src="${c.crops[0]}" alt="Crop from ${esc(c.source_label||c.source_file)} page ${c.source_page}">` : ''}
+      </div>
+      <h3>OCR transcript</h3>
+      <div class="ocr" id="ocr">Loading…</div>
+    `;
+    host.appendChild(h);
+    // Try to load OCR text from sibling txt
+    const txt = `CASE_EXTRACTS/${c.source_file}/page_${String(c.source_page).padStart(4,'0')}.txt`;
+    fetch(txt).then(r => r.ok ? r.text() : '').then(t => {
+      const box = document.getElementById('ocr');
+      box.textContent = t || 'No OCR available for this page.';
+    });
+  });
+  </script>
+</body>
+</html>
