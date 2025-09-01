@@ -1,0 +1,38 @@
+/* Minimal, readable styling */
+:root{
+  --bg:#0b0c10;
+  --panel:#12131a;
+  --ink:#e8eaed;
+  --muted:#a7adb6;
+  --accent:#6be3ff;
+  --card:#181926;
+  --border:#2a2d3a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.site-header{padding:1rem 1.25rem;border-bottom:1px solid var(--border);background:var(--panel);position:sticky;top:0;z-index:10}
+.site-header h1{margin:0 0 .25rem 0;font-size:1.25rem}
+nav a{margin-right:.75rem;opacity:.9}
+nav a.active{font-weight:600}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+.controls{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
+.controls input[type="search"]{flex:1;min-width:220px;padding:.6rem .75rem;border:1px solid var(--border);border-radius:.5rem;background:var(--card);color:var(--ink)}
+.controls select,.controls button{padding:.6rem .75rem;border:1px solid var(--border);border-radius:.5rem;background:var(--card);color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+.card{display:flex;gap:.75rem;padding:.75rem;border:1px solid var(--border);border-radius:.75rem;background:var(--card)}
+.card .thumb{width:110px;min-width:110px;height:110px;border-radius:.5rem;background:#0e0f17 url('assets/placeholder.png') center/cover no-repeat;border:1px solid var(--border);cursor:pointer}
+.card .meta{flex:1;min-width:0}
+.card .title{margin:.15rem 0;font-size:1rem}
+.card .excerpt{margin:.25rem 0 .5rem;color:var(--muted);font-size:.9rem;max-height:3.2em;overflow:hidden}
+.card .links a{margin-right:.6rem;font-size:.9rem}
+.tags{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.35rem}
+.tags .tag{font-size:.75rem;border:1px solid var(--border);border-radius:999px;padding:.1rem .5rem;color:var(--muted)}
+
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;padding:2rem}
+.lightbox.hidden{display:none}
+.lightbox img{max-width:92vw;max-height:86vh;border-radius:.5rem;border:1px solid var(--border);background:#000}
+.lightbox-close{position:absolute;top:12px;right:16px;font-size:2rem;line-height:1;background:none;border:none;color:#fff;cursor:pointer}
+
+.site-footer{padding:2rem 1.25rem;color:var(--muted);border-top:1px solid var(--border);background:var(--panel);margin-top:2rem}

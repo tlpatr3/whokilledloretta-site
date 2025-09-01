@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legal • The Loretta Willoughby Newspaper Archive</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Legal & Copyright</h1>
+    <nav>
+      <a href="index.html">Clippings</a>
+      <a href="about.html">About</a>
+      <a href="legal.html" class="active">Legal</a>
+    </nav>
+  </header>
+  <main class="container">
+    <h2>Use of Newspaper Content</h2>
+    <p>These clippings are presented for <em>research, news reporting, commentary, and educational</em> purposes. Original copyrights belong to their respective publishers. We include minimal excerpts and small crops alongside commentary and context, which may qualify as fair use. If you are a rights holder and have concerns, please contact us.</p>
+    <h2>Attribution</h2>
+    <p>When sharing, please credit the original newspaper (e.g., “Estill County Tribune”, “Citizen Voice & Times”) and link back to this website’s specific entry.</p>
+    <h2>Accessibility</h2>
+    <p>We provide OCR text to aid screen readers and search. OCR may contain errors; please consult the scanned page for verification.</p>
+  </main>
+  <footer class="site-footer">
+    <p>© {year} The Loretta Willoughby Project.</p>
+  </footer>
+  <script>document.querySelector('.site-footer p').innerHTML = document.querySelector('.site-footer p').innerHTML.replace('{year}', new Date().getFullYear());</script>
+</body>
+</html>

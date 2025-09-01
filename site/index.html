@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Loretta Willoughby Newspaper Archive</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Digitized clippings and transcripts from Estill County newspapers about the Loretta Lynn Willoughby case (1985–1987).">
+</head>
+<body>
+  <header class="site-header">
+    <h1>The Loretta Willoughby Newspaper Archive</h1>
+    <nav>
+      <a href="index.html" class="active">Clippings</a>
+      <a href="about.html">About</a>
+      <a href="legal.html">Legal</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <input id="search" type="search" placeholder="Search headline/excerpt (e.g., Willoughby, homicide, Reed)">
+      <select id="sourceFilter">
+        <option value="">All sources</option>
+      </select>
+      <button id="clearBtn" type="button">Clear</button>
+    </section>
+
+    <section id="grid" class="grid"></section>
+    <template id="clip-card">
+      <article class="card">
+        <div class="thumb"></div>
+        <div class="meta">
+          <h3 class="title"></h3>
+          <p class="excerpt"></p>
+          <div class="links"></div>
+          <div class="tags"></div>
+        </div>
+      </article>
+    </template>
+  </main>
+
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightboxImg" alt="Newspaper clipping preview">
+  </div>
+
+  <footer class="site-footer">
+    <p>© {year} The Loretta Willoughby Project. Sources: Estill County Tribune; Citizen Voice & Times.</p>
+  </footer>
+
+  <script>document.querySelector('.site-footer p').innerHTML = document.querySelector('.site-footer p').innerHTML.replace('{year}', new Date().getFullYear());</script>
+  <script src="app.js"></script>
+</body>
+</html>

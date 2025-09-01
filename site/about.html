@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • The Loretta Willoughby Newspaper Archive</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>About This Project</h1>
+    <nav>
+      <a href="index.html">Clippings</a>
+      <a href="about.html" class="active">About</a>
+      <a href="legal.html">Legal</a>
+    </nav>
+  </header>
+  <main class="container">
+    <p>This website preserves and shares primary-source newspaper clippings related to the 1985–1987 investigation into the death of <strong>Loretta Lynn Willoughby</strong> in Estill County, Kentucky. It aims to provide public access and context for researchers, journalists, and the community.</p>
+    <p>Each entry includes a scan (crop) from the original newspaper page, a transcript (OCR), and a link to the full page PDF for verification. Where possible, we include publication details and dates.</p>
+    <h2>How it’s organized</h2>
+    <ul>
+      <li><em>Clippings</em> are grouped by source (Estill County Tribune; Citizen Voice & Times) and issue.</li>
+      <li>The search bar looks through source names and excerpts.</li>
+      <li>Use the source filter to narrow results.</li>
+    </ul>
+    <h2>Contact</h2>
+    <p>If you have information, corrections, or additional clippings to contribute, please reach out.</p>
+  </main>
+  <footer class="site-footer">
+    <p>© {year} The Loretta Willoughby Project.</p>
+  </footer>
+  <script>document.querySelector('.site-footer p').innerHTML = document.querySelector('.site-footer p').innerHTML.replace('{year}', new Date().getFullYear());</script>
+</body>
+</html>
