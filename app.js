@@ -80,10 +80,29 @@ function render(){
   grid.innerHTML = '';
   filtered.forEach(c => {
     const node = cardTpl.content.cloneNode(true);
+<<<<<<< HEAD
 
     const titleEl   = node.querySelector('.title');
     const thumbDiv  = node.querySelector('.thumb');
     const thumbLink = node.querySelector('.thumbLink'); // may be null if template doesn't wrap the thumb
+=======
+    const titleEl = node.querySelector('.title');
+    const thumb = node.querySelector('.thumb');
+    const thumbLink = node.querySelector('.thumbLink');
+    const preview = (c.crops && c.crops.length) ? c.crops[0] : null;
+if (preview){
+  thumb.style.backgroundImage = `url('${preview}')`;
+  // Send thumbnails to the reading view, not the raw image
+  thumbLink.href = `clip.html?id=${c.id}`;
+  thumbLink.removeAttribute('target'); // open in same tab
+  thumbLink.setAttribute('aria-label', `Open reader view for ${c.source_label||c.source_file}, page ${c.source_page}`);
+}
+
+
+// Ensure proper termination with a semicolon;
+const baseTitle = `${c.source_label || c.source_file} — p.${c.source_page}`;
+    titleEl.innerHTML = `<a href="clip.html?id=${c.id}">${highlight(baseTitle, searchInput.value)}</a>`;
+>>>>>>> f44b290fcf53c8b0ee0886f361f09b7f8df528e2
     const excerptEl = node.querySelector('.excerpt');
     const links     = node.querySelector('.links');
     const tagsEl    = node.querySelector('.tags');
@@ -142,9 +161,10 @@ function render(){
     }
 
     grid.appendChild(node);
-  });
-  updateCount();
-}
+  })
+    updateCount();
+  
+
 
 function applyFilters(){
   const qv = (searchInput && searchInput.value || '').toLowerCase();
@@ -160,6 +180,7 @@ function applyFilters(){
   render();
 }
 
+<<<<<<< HEAD
 // Bootstrap
 fetch('clippings.json').then(r=>r.json()).then(data => {
   CLIPS = data.clippings || [];
@@ -185,3 +206,8 @@ if (clearBtn) clearBtn.addEventListener('click', ()=>{
   if (yearFilter) yearFilter.value='';
   applyFilters();
 });
+=======
+// Initialize from URL params
+applyParamsToControls();
+applyFilters()}
+>>>>>>> f44b290fcf53c8b0ee0886f361f09b7f8df528e2
