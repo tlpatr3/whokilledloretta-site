@@ -47,6 +47,26 @@ function render(){
     (c.tags||[]).forEach(t=> tagsEl.appendChild(tagPill(t)));
     grid.appendChild(node);
   });
+   // Thumbnail → open the single-page PDF (fallback to image if missing)
+if (preview){
+  thumb.style.backgroundImage = `url('${preview}')`;
+}
+if (c.page_pdf) {
+  thumbLink.href = c.page_pdf;
+  thumbLink.target = '_blank';
+  thumbLink.setAttribute('aria-label', `Open PDF for ${c.source_label||c.source_file}, page ${c.source_page}`);
+} else if (preview) {
+  // fallback if we ever have a clipping without a PDF
+  thumbLink.href = preview;
+  thumbLink.target = '_blank';
+  thumbLink.setAttribute('aria-label', `Open image crop for ${c.source_label||c.source_file}, page ${c.source_page}`);
+} else {
+  // no media available
+  thumbLink.href = '#';
+  thumbLink.removeAttribute('target');
+  thumbLink.setAttribute('aria-label', `No media available for ${c.source_label||c.source_file}, page ${c.source_page}`);
+}
+
 }
 
 function applyFilters(){
