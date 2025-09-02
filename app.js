@@ -131,11 +131,14 @@ function render(){
     const thumb = node.querySelector('.thumb');
     const thumbLink = node.querySelector('.thumbLink');
     const preview = (c.crops && c.crops.length) ? c.crops[0] : null;
-    if(preview){
-      thumb.style.backgroundImage = `url('${preview}')`;
-      thumbLink.href = preview;
-      thumbLink.target = '_blank';
-      thumbLink.setAttribute('aria-label', `Open image crop for ${c.source_label||c.source_file}, page ${c.source_page}`);
+    iif (preview){
+  thumb.style.backgroundImage = `url('${preview}')`;
+  // Send thumbnails to the reading view, not the raw image
+  thumbLink.href = `clip.html?id=${c.id}`;
+  thumbLink.removeAttribute('target'); // open in same tab
+  thumbLink.setAttribute('aria-label', `Open reader view for ${c.source_label||c.source_file}, page ${c.source_page}`);
+}
+
     }
     const baseTitle = `${c.source_label || c.source_file} — p.${c.source_page}`;
     titleEl.innerHTML = `<a href="clip.html?id=${c.id}">${highlight(baseTitle, searchInput.value)}</a>`;
