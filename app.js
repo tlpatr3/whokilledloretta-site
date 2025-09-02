@@ -151,7 +151,7 @@ function render(){
     const thumb = node.querySelector('.thumb');
     const thumbLink = node.querySelector('.thumbLink');
     const preview = (c.crops && c.crops.length) ? c.crops[0] : null;
-    iif (preview){
+if (preview){
   thumb.style.backgroundImage = `url('${preview}')`;
   // Send thumbnails to the reading view, not the raw image
   thumbLink.href = `clip.html?id=${c.id}`;
@@ -159,8 +159,9 @@ function render(){
   thumbLink.setAttribute('aria-label', `Open reader view for ${c.source_label||c.source_file}, page ${c.source_page}`);
 }
 
-    }
-    const baseTitle = `${c.source_label || c.source_file} — p.${c.source_page}`;
+
+// Ensure proper termination with a semicolon;
+const baseTitle = `${c.source_label || c.source_file} — p.${c.source_page}`;
     titleEl.innerHTML = `<a href="clip.html?id=${c.id}">${highlight(baseTitle, searchInput.value)}</a>`;
     const excerptEl = node.querySelector('.excerpt');
     excerptEl.innerHTML = highlight(excerptize(c.excerpt), searchInput.value);
@@ -170,9 +171,10 @@ function render(){
     const tagsEl = node.querySelector('.tags');
     (c.tags||[]).forEach(t=>{ const s=document.createElement('span'); s.className='tag'; s.textContent=t; tagsEl.appendChild(s); });
     grid.appendChild(node);
-  });
-  updateCount();
-}
+  })
+    updateCount();
+  
+
 
 function applyFilters(){
   const qv = (searchInput.value||'').toLowerCase();
@@ -190,4 +192,4 @@ function applyFilters(){
 
 // Initialize from URL params
 applyParamsToControls();
-applyFilters();
+applyFilters()}
