@@ -1,4 +1,4 @@
-// Clippings gallery with filters and lightbox
+// Clippings gallery with filters and lightbox (robust PDF thumbnail behavior)
 const grid = document.getElementById('grid');
 const cardTpl = document.getElementById('clip-card');
 const searchInput = document.getElementById('search');
@@ -8,12 +8,9 @@ const clearBtn = document.getElementById('clearBtn');
 
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
-if (document.getElementById('lightboxClose')) {
-  document.getElementById('lightboxClose').onclick = () => lightbox.classList.add('hidden');
-}
-if (lightbox) {
-  lightbox.onclick = (e)=>{ if(e.target===lightbox) lightbox.classList.add('hidden'); };
-}
+const closeBtn = document.getElementById('lightboxClose');
+if (closeBtn) closeBtn.onclick = () => lightbox.classList.add('hidden');
+if (lightbox) lightbox.onclick = (e)=>{ if(e.target===lightbox) lightbox.classList.add('hidden'); };
 
 let CLIPS = [];
 let filtered = [];
@@ -31,140 +28,96 @@ function tagPill(t){
   return span;
 }
 
-// === Enhancements: deep-linking, counts, highlighting, reader links ===
+// Deep linking + counts + highlight
 const resultsCount = document.getElementById('resultsCount');
 const hint = document.getElementById('hint');
 
 function setParams(params){
   const url = new URL(location);
-  Object.entries(params).forEach(([k,v])=>{
-    if(v) url.searchParams.set(k, v);
-    else url.searchParams.delete(k);
-  });
+  Object.entries(params).forEach(([k,v])=>{ if(v) url.searchParams.set(k,v); else url.searchParams.delete(k); });
   history.replaceState(null, '', url);
 }
-
 function getParams(){
   const sp = new URLSearchParams(location.search);
-  return {
-    q: sp.get('q') || '',
-    source: sp.get('source') || '',
-    year: sp.get('year') || '',
-    id: sp.get('id') || ''
-  };
+  return { q: sp.get('q')||'', source: sp.get('source')||'', year: sp.get('year')||'' };
 }
-
 function applyParamsToControls(){
   const p = getParams();
   if (searchInput) searchInput.value = p.q;
   if (sourceFilter) sourceFilter.value = p.source;
   if (yearFilter) yearFilter.value = p.year;
 }
-
 function updateCount(){
   if (!resultsCount) return;
   const n = filtered.length;
   resultsCount.textContent = n + (n===1 ? ' result' : ' results');
-  if (hint) hint.textContent = searchInput && searchInput.value ? 'Tip: click a card title for a clean reading view.' : '';
+  if (hint) hint.textContent = (searchInput && searchInput.value) ? 'Tip: click a card title for a clean reading view.' : '';
 }
-
 function highlight(text, q){
   if(!q) return text;
-  try{
-    const rx = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')','ig');
-    return text.replace(rx, '<mark>$1</mark>');
-  }catch(e){ return text; }
+  try{ const rx = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')','ig'); return text.replace(rx, '<mark>$1</mark>'); }
+  catch(e){ return text; }
 }
 
 function render(){
   grid.innerHTML = '';
+  const qv = (searchInput && searchInput.value) || '';
   filtered.forEach(c => {
     const node = cardTpl.content.cloneNode(true);
-<<<<<<< HEAD
 
-    const titleEl   = node.querySelector('.title');
-    const thumbDiv  = node.querySelector('.thumb');
-    const thumbLink = node.querySelector('.thumbLink'); // may be null if template doesn't wrap the thumb
-=======
+    const article = node.querySelector('.card');
     const titleEl = node.querySelector('.title');
-    const thumb = node.querySelector('.thumb');
+    const thumbDiv = node.querySelector('.thumb');
     const thumbLink = node.querySelector('.thumbLink');
-    const preview = (c.crops && c.crops.length) ? c.crops[0] : null;
-if (preview){
-  thumb.style.backgroundImage = `url('${preview}')`;
-  // Send thumbnails to the reading view, not the raw image
-  thumbLink.href = `clip.html?id=${c.id}`;
-  thumbLink.removeAttribute('target'); // open in same tab
-  thumbLink.setAttribute('aria-label', `Open reader view for ${c.source_label||c.source_file}, page ${c.source_page}`);
-}
-
-
-// Ensure proper termination with a semicolon;
-const baseTitle = `${c.source_label || c.source_file} — p.${c.source_page}`;
-    titleEl.innerHTML = `<a href="clip.html?id=${c.id}">${highlight(baseTitle, searchInput.value)}</a>`;
->>>>>>> f44b290fcf53c8b0ee0886f361f09b7f8df528e2
     const excerptEl = node.querySelector('.excerpt');
-    const links     = node.querySelector('.links');
-    const tagsEl    = node.querySelector('.tags');
+    const links = node.querySelector('.links');
+    const tagsEl = node.querySelector('.tags');
+
+    // Identify card for delegated clicks
+    article.dataset.id = String(c.id);
 
     const preview = (c.crops && c.crops.length) ? c.crops[0] : null;
-    if (preview) {
-      thumbDiv.style.backgroundImage = `url('${preview}')`;
-    }
-
-    // Thumbnail → open the single-page PDF (fallback to image if missing)
-    const targetHref = c.page_pdf || preview || '#';
-    const ariaLabel  = c.page_pdf
-      ? `Open PDF for ${c.source_label||c.source_file}, page ${c.source_page}`
-      : (preview
-          ? `Open image crop for ${c.source_label||c.source_file}, page ${c.source_page}`
-          : `No media available for ${c.source_label||c.source_file}, page ${c.source_page}`);
-
-    if (thumbLink) {
-      thumbLink.href = targetHref;
-      if (targetHref !== '#') thumbLink.target = '_blank'; else thumbLink.removeAttribute('target');
-      thumbLink.setAttribute('aria-label', ariaLabel);
-      thumbLink.onclick = (e) => { if (targetHref === '#') e.preventDefault(); };
-    } else {
-      if (targetHref !== '#') {
-        thumbDiv.style.cursor = 'pointer';
-        thumbDiv.onclick = () => window.open(targetHref, '_blank');
-        thumbDiv.setAttribute('role','link');
-        thumbDiv.setAttribute('aria-label', ariaLabel);
-      } else {
-        thumbDiv.removeAttribute('onclick');
-      }
-    }
+    if (preview) thumbDiv.style.backgroundImage = `url('${preview}')`;
 
     // Title → reader view
     const baseTitle = `${c.source_label || c.source_file} — p.${c.source_page}`;
-    const qv = (searchInput && searchInput.value) || '';
     titleEl.innerHTML = `<a href="clip.html?id=${c.id}">${highlight(baseTitle, qv)}</a>`;
 
     if (excerptEl) excerptEl.innerHTML = highlight(excerptize(c.excerpt), qv);
 
     if (links) {
-      if(c.page_pdf) {
-        const a = document.createElement('a');
-        a.href = c.page_pdf; a.target = '_blank'; a.textContent = 'View page PDF';
-        links.appendChild(a);
-      }
-      if(preview) {
-        const a2 = document.createElement('a');
-        a2.href = preview; a2.target = '_blank'; a2.textContent = 'Open first crop';
-        links.appendChild(a2);
-      }
+      if (c.page_pdf) { const a=document.createElement('a'); a.href=c.page_pdf; a.target='_blank'; a.textContent='View page PDF'; links.appendChild(a); }
+      if (preview)    { const a2=document.createElement('a'); a2.href=preview; a2.target='_blank'; a2.textContent='Open first crop'; links.appendChild(a2); }
     }
 
-    if (tagsEl) {
-      (c.tags||[]).forEach(t=> tagsEl.appendChild(tagPill(t)));
+    if (tagsEl) (c.tags||[]).forEach(t => tagsEl.appendChild(tagPill(t)));
+
+    // If template includes an <a.thumbLink>, set href to the PDF (fallback to image)
+    if (thumbLink) {
+      const href = c.page_pdf || preview || '#';
+      thumbLink.href = href;
+      if (href !== '#') thumbLink.target = '_blank'; else thumbLink.removeAttribute('target');
+      thumbLink.setAttribute('aria-label', c.page_pdf ? `Open PDF for ${c.source_label||c.source_file}, page ${c.source_page}` : (preview ? `Open image crop for ${c.source_label||c.source_file}, page ${c.source_page}` : `No media available`));
+      thumbLink.onclick = (e) => { if (href === '#') e.preventDefault(); };
     }
 
     grid.appendChild(node);
-  })
-    updateCount();
-  
+  });
+  updateCount();
+}
 
+// Event delegation fallback: ANY click on a card's .thumb or .thumbLink opens its PDF (or image)
+grid.addEventListener('click', (e) => {
+  const tgt = e.target.closest('.thumbLink, .thumb');
+  if (!tgt) return;
+  const card = tgt.closest('.card');
+  if (!card) return;
+  const id = Number(card.dataset.id);
+  const c = CLIPS.find(x => Number(x.id) === id);
+  if (!c) return;
+  const url = c.page_pdf || (c.crops && c.crops[0]) || null;
+  if (url) { e.preventDefault(); window.open(url, '_blank'); }
+});
 
 function applyFilters(){
   const qv = (searchInput && searchInput.value || '').toLowerCase();
@@ -180,7 +133,6 @@ function applyFilters(){
   render();
 }
 
-<<<<<<< HEAD
 // Bootstrap
 fetch('clippings.json').then(r=>r.json()).then(data => {
   CLIPS = data.clippings || [];
@@ -206,8 +158,3 @@ if (clearBtn) clearBtn.addEventListener('click', ()=>{
   if (yearFilter) yearFilter.value='';
   applyFilters();
 });
-=======
-// Initialize from URL params
-applyParamsToControls();
-applyFilters()}
->>>>>>> f44b290fcf53c8b0ee0886f361f09b7f8df528e2

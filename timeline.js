@@ -1,8 +1,6 @@
-// Timeline page — make thumbnail open the PDF (fallback to image)
+// Timeline page — open PDF from thumbnail via delegation
 const host = document.getElementById('timeline');
-fetch('clippings.json').then(r=>r.json()).then(({
-  clippings
-}) => {
+fetch('clippings.json').then(r=>r.json()).then(({ clippings }) => {
   const byYear = {};
   (clippings||[]).forEach(c => {
     const y = c.year || 'Undated';
@@ -15,18 +13,10 @@ fetch('clippings.json').then(r=>r.json()).then(({
     const h = document.createElement('h2'); h.textContent = y; host.appendChild(h);
     const list = document.createElement('div'); list.className = 'grid'; host.appendChild(list);
     byYear[y].forEach(c => {
-      const card = document.createElement('article'); card.className='card';
+      const card = document.createElement('article'); card.className='card'; card.dataset.id = String(c.id);
       const thumb = document.createElement('div'); thumb.className='thumb';
       const preview = (c.crops && c.crops.length) ? c.crops[0] : null;
       if(preview) thumb.style.backgroundImage=`url('${preview}')`;
-      // Thumbnail opens PDF (fallback to image)
-      const targetHref = c.page_pdf || preview || null;
-      if (targetHref) {
-        thumb.style.cursor = 'pointer';
-        thumb.onclick = () => window.open(targetHref, '_blank');
-        thumb.setAttribute('role','link');
-        thumb.setAttribute('aria-label', c.page_pdf ? `Open PDF for ${c.source_label||c.source_file}, page ${c.source_page}` : `Open image crop for ${c.source_label||c.source_file}, page ${c.source_page}`);
-      }
       const meta = document.createElement('div'); meta.className='meta';
       const title = document.createElement('h3'); title.className='title'; title.textContent = `${c.source_label||c.source_file} — p.${c.source_page}`;
       const excerpt = document.createElement('p'); excerpt.className='excerpt'; excerpt.textContent = (c.excerpt||'').replace(/\s+/g,' ').slice(0,220);
@@ -39,5 +29,18 @@ fetch('clippings.json').then(r=>r.json()).then(({
       meta.appendChild(title); meta.appendChild(excerpt); meta.appendChild(links); meta.appendChild(tags);
       card.appendChild(thumb); card.appendChild(meta); list.appendChild(card);
     });
+  });
+});
+
+document.addEventListener('click', (e) => {
+  const t = e.target.closest('.thumb');
+  if (!t) return;
+  const card = t.closest('.card');
+  const id = Number(card?.dataset?.id);
+  fetch('clippings.json').then(r=>r.json()).then(d=>{
+    const c = (d.clippings||[]).find(x => Number(x.id)===id);
+    if (!c) return;
+    const url = c.page_pdf || (c.crops && c.crops[0]) || null;
+    if (url) window.open(url, '_blank');
   });
 });
