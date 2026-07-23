@@ -3,46 +3,124 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About • The Loretta Willoughby Newspaper Archive</title>
+
+  <meta
+    name="description"
+    content="Learn about the purpose, scope, and editorial standards of The Loretta Willoughby Archive."
+  />
+
+  <title>About the Project | The Loretta Willoughby Archive</title>
+
   <link rel="stylesheet" href="styles.css" />
-  
   <link rel="icon" href="assets/favicon.ico" />
-  <meta property="og:title" content="Who Killed Loretta? Newspaper Archive">
-  <meta property="og:description" content="Digitized clippings, transcripts, and context from Estill County newspapers (1985–1987).">
+
+  <meta property="og:title" content="About The Loretta Willoughby Archive">
+  <meta
+    property="og:description"
+    content="An independent historical preservation project documenting Loretta Willoughby's life, unsolved murder, and the investigation that followed."
+  >
   <meta property="og:image" content="assets/og-image.png">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.whokilledloretta.com/">
-  <meta name="twitter:card" content="summary_large_image">
-  <script defer data-domain="whokilledloretta.com" src="https://plausible.io/js/script.js"></script>
+  <meta property="og:url" content="https://www.whokilledloretta.com/about.html">
 
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script
+    defer
+    data-domain="whokilledloretta.com"
+    src="https://plausible.io/js/script.js"
+  ></script>
 </head>
+
 <body>
   <header class="site-header">
-    <h1>About This Project</h1>
-    <nav>
-      <a href="index.html">Clippings</a>
+    <h1>The Loretta Willoughby Archive</h1>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="archive.html">Research Archive</a>
       <a href="timeline.html">Timeline</a>
       <a href="about.html" class="active">About</a>
       <a href="legal.html">Legal</a>
     </nav>
   </header>
-  <main class="container">
-    <p>This site preserves primary-source clippings related to the 1985–1987 investigation into the death of <strong>Loretta Lynn Willoughby</strong> in Estill County, Kentucky. It’s intended for researchers, journalists, and the community.</p>
-    <h2>What’s here</h2>
-    <ul>
-      <li>Scan crops and transcripts for quick reading</li>
-      <li>Links to full-page PDFs for verification</li>
-      <li>Index by year and source</li>
-    </ul>
-    <h2>Notes</h2>
-    <p>OCR text may contain errors; consult the PDFs for verification. Dates and tags are approximations derived from the issue labels.</p>
+
+  <main class="container page-content">
+    <section class="page-intro">
+      <p class="eyebrow">About the Project</p>
+
+      <h2>Preserving the historical record</h2>
+
+      <p class="intro-text">
+        The Loretta Willoughby Archive preserves the documented history of
+        Loretta's life, her unsolved murder, and the investigation that
+        followed. Through newspapers, public records, photographs, and
+        community memories, the project seeks to ensure that Loretta is
+        remembered and that the historical record remains accessible to
+        future generations.
+      </p>
+    </section>
+
+    <section>
+      <h2>What the archive contains</h2>
+
+      <ul>
+        <li>Digitized newspaper clippings and transcripts</li>
+        <li>Links to full-page newspaper scans for verification</li>
+        <li>A searchable index organized by date, source, name, and subject</li>
+        <li>A documented timeline of the case</li>
+        <li>Historical context drawn from available public sources</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Editorial principles</h2>
+
+      <p>
+        This project is intended to preserve and organize the available
+        historical record. It does not present rumor, speculation, or
+        unsupported accusations as fact.
+      </p>
+
+      <p>
+        Information is identified by source whenever possible. Newspaper
+        reporting, public records, and personal recollections may contain
+        errors, omissions, or conflicting accounts. Readers are encouraged to
+        consult the original documents when conducting research.
+      </p>
+    </section>
+
+    <section>
+      <h2>Accuracy and corrections</h2>
+
+      <p>
+        OCR-generated transcripts may contain spelling, punctuation, or
+        formatting errors. Full-page scans are provided where available so
+        readers can review the original publication.
+      </p>
+
+      <p>
+        Dates, names, and descriptions may be revised when stronger
+        documentation becomes available.
+      </p>
+    </section>
+
+    <section>
+      <h2>Independent and noncommercial</h2>
+
+      <p>
+        The Loretta Willoughby Archive is an independent, noncommercial
+        historical preservation project. It is not affiliated with law
+        enforcement, the courts, a newspaper, or any member of Loretta's
+        family.
+      </p>
+    </section>
   </main>
+
   <footer class="site-footer">
-    <p>© {year} The Loretta Willoughby Project.</p>
+    <p>
+      An independent, noncommercial historical preservation project.
+    </p>
   </footer>
-  <script>
-    document.querySelector('.site-footer p').innerHTML =
-      document.querySelector('.site-footer p').innerHTML.replace('{year}', new Date().getFullYear());
-  </script>
 </body>
 </html>
