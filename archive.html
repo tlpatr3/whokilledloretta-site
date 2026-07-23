@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Loretta Willoughby Newspaper Archive</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>The Loretta Willoughby Newspaper Archive</h1>
+   <nav>
+    <a href="index.html">Home</a>
+    <a href="archive.html" class="active">Research Archive</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="about.html">About</a>
+    <a href="legal.html">Legal</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="controls" style="align-items:center">
+      <input id="search" type="search" placeholder="Search (names, places, terms)">
+      <select id="sourceFilter"><option value="">All sources</option></select>
+      <select id="yearFilter"><option value="">All years</option></select>
+      <button id="clearBtn" type="button">Clear</button>
+    </section>
+
+    <div class="resultsbar">
+      <span id="resultsCount" class="count" aria-live="polite"></span>
+      <span id="hint"></span>
+    </div>
+
+    <section id="grid" class="grid"></section>
+
+    <template id="clip-card">
+      <article class="card">
+        <a class="thumbLink" href="#" aria-label="Open clipping"><div class="thumb"></div></a>
+        <div class="meta">
+          <h3 class="title"></h3>
+          <p class="excerpt"></p>
+          <div class="links"></div>
+          <div class="tags"></div>
+        </div>
+      </article>
+    </template>
+  </main>
+
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightboxImg" alt="Newspaper clipping preview">
+  </div>
+
+  <footer class="site-footer">
+    <p>© <script>document.write(new Date().getFullYear())</script> The Loretta Willoughby Project.</p>
+  </footer>
+
+  <script src="app.js?v=pdfthumbs1"></script>
+</body>
+</html>

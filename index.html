@@ -3,57 +3,106 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Loretta Willoughby Newspaper Archive</title>
+  <meta
+    name="description"
+    content="The Loretta Willoughby Archive preserves the documented history of Loretta Willoughby, her unsolved 1985 murder, and the investigation that followed in Estill County, Kentucky."
+  />
+  <title>Loretta Willoughby Archive | Estill County, Kentucky</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="site-header">
-    <h1>The Loretta Willoughby Newspaper Archive</h1>
-    <nav>
-      <a href="index.html" class="active">Clippings</a>
+    <h1>The Loretta Willoughby Archive</h1>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="archive.html">Research Archive</a>
       <a href="timeline.html">Timeline</a>
       <a href="about.html">About</a>
       <a href="legal.html">Legal</a>
     </nav>
   </header>
 
-  <main class="container">
-    <section class="controls" style="align-items:center">
-      <input id="search" type="search" placeholder="Search (names, places, terms)">
-      <select id="sourceFilter"><option value="">All sources</option></select>
-      <select id="yearFilter"><option value="">All years</option></select>
-      <button id="clearBtn" type="button">Clear</button>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Estill County, Kentucky</p>
+
+        <h2>Loretta Lynn Willoughby</h2>
+
+        <p class="years">1969–1985</p>
+
+        <p class="hero-summary">
+          Loretta was fifteen years old when she disappeared on February 10,
+          1985. Her murder remains unsolved.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary-button" href="timeline.html">
+            Learn About the Case
+          </a>
+
+          <a class="button secondary-button" href="archive.html">
+            Browse the Research Archive
+          </a>
+        </div>
+      </div>
     </section>
 
-    <div class="resultsbar">
-      <span id="resultsCount" class="count" aria-live="polite"></span>
-      <span id="hint"></span>
-    </div>
+    <section class="mission-section">
+      <div class="container narrow">
+        <h2>About the Archive</h2>
 
-    <section id="grid" class="grid"></section>
+        <p>
+          The Loretta Willoughby Archive preserves the documented history of
+          Loretta's life, her unsolved murder, and the investigation that
+          followed. Through newspapers, public records, photographs, and
+          community memories, the project seeks to ensure that Loretta is
+          remembered and that the historical record remains accessible to
+          future generations.
+        </p>
+      </div>
+    </section>
 
-    <template id="clip-card">
-      <article class="card">
-        <a class="thumbLink" href="#" aria-label="Open clipping"><div class="thumb"></div></a>
-        <div class="meta">
-          <h3 class="title"></h3>
-          <p class="excerpt"></p>
-          <div class="links"></div>
-          <div class="tags"></div>
+    <section class="home-sections">
+      <div class="container">
+        <div class="home-grid">
+          <article class="home-card">
+            <h2>The Case</h2>
+            <p>
+              Follow the documented events surrounding Loretta's disappearance,
+              the search, the investigation, and the court proceedings.
+            </p>
+            <a href="timeline.html">View the timeline</a>
+          </article>
+
+          <article class="home-card">
+            <h2>Research Archive</h2>
+            <p>
+              Browse searchable newspaper clippings and other historical
+              materials related to Loretta and the case.
+            </p>
+            <a href="archive.html">Explore the archive</a>
+          </article>
+
+          <article class="home-card">
+            <h2>About This Project</h2>
+            <p>
+              Learn why this archive was created and how information is
+              collected, reviewed, and presented.
+            </p>
+            <a href="about.html">Read about the project</a>
+          </article>
         </div>
-      </article>
-    </template>
+      </div>
+    </section>
   </main>
 
-  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Image preview">
-    <button id="lightboxClose" class="lightbox-close" aria-label="Close">&times;</button>
-    <img id="lightboxImg" alt="Newspaper clipping preview">
-  </div>
-
   <footer class="site-footer">
-    <p>© <script>document.write(new Date().getFullYear())</script> The Loretta Willoughby Project.</p>
+    <p>
+      An independent, noncommercial historical preservation project.
+    </p>
   </footer>
-
-  <script src="app.js?v=pdfthumbs1"></script>
 </body>
 </html>
