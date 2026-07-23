@@ -34,4 +34,229 @@ mark{background:#ffd54d;color:#000}
    HOMEPAGE REDESIGN
    ======================================================= */
 
-   
+
+/* =======================================================
+   HOMEPAGE HERO
+   ======================================================= */
+
+.hero {
+    background: linear-gradient(180deg, #f8f5ef 0%, #ece7dc 100%);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: #7a6f60;
+    font-size: .9rem;
+    margin-bottom: .75rem;
+}
+
+.hero h2 {
+    font-size: 3.4rem;
+    color: #2d2d2d;
+    margin-bottom: .5rem;
+}
+
+.years {
+    font-size: 1.25rem;
+    color: #7a6f60;
+    margin-bottom: 2rem;
+}
+
+.hero-summary {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: auto;
+    color: #444;
+}
+
+.hero-actions {
+    margin-top: 2.5rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* =======================================================
+   HOMEPAGE BUTTONS
+   ======================================================= */
+
+.button {
+    display: inline-block;
+    padding: 0.9rem 1.4rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.primary-button {
+    background-color: #24364b;
+    color: #ffffff;
+}
+
+.primary-button:hover {
+    background-color: #182536;
+}
+
+.secondary-button {
+    border: 1px solid #24364b;
+    color: #24364b;
+    background-color: transparent;
+}
+
+.secondary-button:hover {
+    background-color: #24364b;
+    color: #ffffff;
+}
+
+/* =======================================================
+   MISSION SECTION
+   ======================================================= */
+
+.mission-section {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.narrow {
+    max-width: 760px;
+}
+
+.mission-section h2 {
+    color: #24364b;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.mission-section p {
+    color: #4b4b4b;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* =======================================================
+   HOMEPAGE CARDS
+   ======================================================= */
+
+.home-sections {
+    background: #f8f5ef;
+    padding: 4rem 2rem 5rem;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.home-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.home-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 34px rgba(0,0,0,.12);
+}
+
+.home-card h2 {
+    color: #24364b;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.home-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.home-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #24364b;
+}
+
+.home-card a:hover {
+    text-decoration: underline;
+}
+
+/* =======================================================
+   SITE FOOTER
+   ======================================================= */
+
+.site-footer {
+    background-color: #24364b;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* =======================================================
+   RESPONSIVE HOMEPAGE
+   ======================================================= */
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 3.5rem 1.25rem;
+    }
+
+    .hero h2 {
+        font-size: 2.4rem;
+    }
+
+    .hero-summary {
+        font-size: 1.05rem;
+    }
+
+    .mission-section,
+    .home-sections {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button {
+        text-align: center;
+    }
+}
